@@ -15,8 +15,8 @@ cd ExpenseTracker
 
 ### Windows
 
-```bash
-mvnw.cmd clean install
+```cmd
+.\mvnw.cmd clean install
 ```
 
 ### Linux / macOS
@@ -29,8 +29,8 @@ mvnw.cmd clean install
 
 ### Windows
 
-```bash
-mvnw.cmd spring-boot:run
+```cmd
+.\mvnw.cmd spring-boot:run
 ```
 
 ### Linux / macOS
@@ -43,6 +43,30 @@ mvnw.cmd spring-boot:run
 
 ```
 http://localhost:8080/swagger-ui/index.html
+```
+
+# Running Tests
+
+Execute all tests using:
+
+### Maven
+
+```bash
+mvn test
+```
+
+### Maven Wrapper
+
+**Windows**
+
+```cmd
+.\mvnw.cmd test
+```
+
+**Linux / macOS**
+
+```bash
+./mvnw test
 ```
 
 
@@ -307,8 +331,8 @@ mvn test
 
 **Windows**
 
-```bash
-mvnw.cmd test
+```cmd
+.\mvnw.cmd test
 ```
 
 **Linux / macOS**
