@@ -35,23 +35,19 @@ The application allows users to manage their personal expenses with data stored 
 ## Project Structure
 
 ```
-expense-tracker-api/
+ExpenseTracker/
 │
-├── README.md
-├── AI_NOTES.md
-├── pom.xml
-│
+├── .mvn/
+├── data/
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   └── resources/
-│   │       └── application.properties
-│   │
-│   └── test/
-│       └── java/
-│
-└── data/
-    └── expenses.json
+├── .gitattributes
+├── .gitignore
+├── AI_NOTES.md
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── ...
 ```
 
 ---
