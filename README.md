@@ -1,3 +1,48 @@
+# Quick Start
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/sanketkumar100/ExpenseTracker.git
+cd ExpenseTracker
+```
+
+## 2. Build the project
+
+### Windows
+
+```bash
+mvnw.cmd clean install
+```
+
+### Linux / macOS
+
+```bash
+./mvnw clean install
+```
+
+## 3. Run the application
+
+### Windows
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+### Linux / macOS
+
+```bash
+./mvnw spring-boot:run
+```
+
+## 4. Open Swagger UI
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+
+
 # Smart Expense Tracker API
 
 A RESTful Expense Tracker API built using **Java 17**, **Spring Boot**, and **Jackson** for the Diligent Software Engineering Apprenticeship Assignment.
@@ -56,9 +101,11 @@ ExpenseTracker/
 
 Before running the project, ensure the following software is installed.
 
-- Java 17
-- Maven 3.9+
+- Java JDK 17
 - Git
+
+(Optional)
+- Maven 3.9+
 
 Verify installation:
 
@@ -90,8 +137,24 @@ cd ExpenseTracker
 
 Run the following command:
 
+### Using Maven
+
 ```bash
 mvn clean install
+```
+
+### OR using Maven Wrapper (Recommended)
+
+**Windows**
+
+```bash
+mvnw.cmd clean install
+```
+
+**Linux / macOS**
+
+```bash
+./mvnw clean install
 ```
 
 This command will:
@@ -107,8 +170,24 @@ This command will:
 
 Start the Spring Boot application using:
 
+### Using Maven
+
 ```bash
 mvn spring-boot:run
+```
+
+### OR using Maven Wrapper
+
+**Windows**
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+**Linux / macOS**
+
+```bash
+./mvnw spring-boot:run
 ```
 
 The application starts on
@@ -146,7 +225,7 @@ Example Request
 ```json
 {
   "title": "Groceries",
-  "amount": 650,
+  "amount": 2350,
   "category": "Food",
   "date": "2026-07-31"
 }
@@ -214,8 +293,24 @@ DELETE /api/expenses/0d5f4a7d-3d16-4a83-9c5b-f3b4c59d2abc
 
 Execute all tests using:
 
+### Maven
+
 ```bash
 mvn test
+```
+
+### Maven Wrapper
+
+**Windows**
+
+```bash
+mvnw.cmd test
+```
+
+**Linux / macOS**
+
+```bash
+./mvnw test
 ```
 
 The project contains unit and integration tests covering:
@@ -269,7 +364,20 @@ Invalid requests return HTTP **400 Bad Request**.
 
 # Notes
 
-- Data is persisted using a local JSON file.
+- The application uses a layered architecture:
+  - Controller
+  - Service
+  - Repository
+- Data is persisted in a local JSON file.
 - No relational database is used.
 - UUIDs are generated automatically for new expenses.
-- The project follows a layered architecture (Controller → Service → Repository).
+- Swagger/OpenAPI is included for API documentation and testing.
+- Project documentation regarding AI usage is available in **AI_NOTES.md**.
+
+---
+
+# Author
+
+**Sanket Kumar**
+
+GitHub: https://github.com/sanketkumar100
