@@ -1,5 +1,9 @@
 # Quick Start
 
+# IDE Support
+
+This project can be opened and run in any Java IDE that supports Maven (IntelliJ IDEA, Eclipse, STS, VS Code, etc.). The project includes the Maven Wrapper (`mvnw`/`mvnw.cmd`), so a separate Maven installation is not required.
+
 ## 1. Clone the repository
 
 ```bash
